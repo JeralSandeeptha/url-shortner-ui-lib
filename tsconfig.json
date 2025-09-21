@@ -1,15 +1,17 @@
 {
-  "files": [],
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "skipLibCheck": true,
-    "types": ["node"],
-    "target": "ESNext",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "dist",
     "module": "ESNext",
-    "lib": ["ESNext", "DOM"]
+    "target": "ES6",
+    "jsx": "react-jsx",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true
   },
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "include": ["src"]
 }
