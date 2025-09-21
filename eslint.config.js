@@ -36,6 +36,7 @@ export default defineConfig([
     'web_modules/',
     '*.tsbuildinfo',
     '.npm',
+    '.npmrc',
     '.eslintcache',
     '.stylelintcache',
     'rpt2_cache/',
