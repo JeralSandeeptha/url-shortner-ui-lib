@@ -13,6 +13,13 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
   plugins: [react(), tailwindcss(), dts()],
+  server: {
+    host: true,          // equivalent to 0.0.0.0
+    port: 5174,
+    watch: {
+      usePolling: true,  // crucial for Docker
+    },
+  },
   test: {
     projects: [
       {
